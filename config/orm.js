@@ -15,9 +15,9 @@ const orm = {
         })
     },
 
-   /*  updateOne: function(){
+    updateOne: function(tableInput, objColVals, condition, cb){
         connection.query(`UPDATE `)
-    } */
+    } 
     
 }
 
