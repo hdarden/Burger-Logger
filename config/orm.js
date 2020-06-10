@@ -15,7 +15,9 @@ const orm = {
         })
     },
 
-    //updateOne:
+   /*  updateOne: function(){
+        connection.query(`UPDATE `)
+    } */
     
 }
 

@@ -112,7 +112,7 @@ Having an active and healthy commit history on GitHub is important for your futu
 
      * `selectAll()`
      * `insertOne()`
-     * `updateOne()`
+    <!--  * `updateOne()` -->
 
    * Export the ORM object in `module.exports`.
 
@@ -124,7 +124,7 @@ Having an active and healthy commit history on GitHub is important for your futu
 
     * Inside `burger.js`, import `orm.js` into `burger.js`
 
-    * Also inside `burger.js`, create the code that will call the ORM functions using burger specific input for the ORM.
+    <!-- * Also inside `burger.js`, create the code that will call the ORM functions using burger specific input for the ORM. -->
 
     * Export at the end of the `burger.js` file.
 
@@ -139,7 +139,7 @@ Having an active and healthy commit history on GitHub is important for your futu
    * Express
    * `burger.js`
 
-4. Create the `router` for the app, and export the `router` at the end of your file.
+<!-- 4. Create the `router` for the app, and export the `router` at the end of your file. -->
 
 #### View setup
 
