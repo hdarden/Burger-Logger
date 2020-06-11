@@ -1,8 +1,11 @@
 const express = require("express");
 const burger = require("../models/burger.js");
 
+//est router
 const router = express.Router();
-//gets burgers listed in db
+
+
+//gets burgers already listed in db
 router.get("/", function(req, res){
     burger.all(function(data){
         var hbsObject = {
