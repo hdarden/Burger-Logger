@@ -1,13 +1,12 @@
 const express = require("express");
 const burger = require("../models/burger.js");
 
-//est router
+//establiching router
 const router = express.Router();
-
 
 //gets burgers already listed in db
 router.get("/", function(req, res){
-    burger.all(function(data){
+    burger.selectAll(function(data){
         var hbsObject = {
             burgers: data
         };
@@ -18,7 +17,7 @@ router.get("/", function(req, res){
 
 //creates a new burger and adds to the list
 router.post("/api/burgers", function(req, res){
-    burger.create(["burger_name"], [req.body.name], function(result){
+    burger.insertOne(["burger_name"], [req.body.name], function(result){
         res.json({ id: result.insertId });
     });
 });
@@ -29,7 +28,7 @@ router.put("/api/burgers/:id", function(req, res){
 
     console.log("condition", condition);
 //updates burger to be devoured
-    burger.update({ devoured: req.body.devoured }, condition, function(result) {
+    burger.updateOne({ devoured: req.body.devoured }, condition, function(result) {
         if (result.changedRows == 0){
             return res.status(404).end();
         }else {
@@ -39,5 +38,5 @@ router.put("/api/burgers/:id", function(req, res){
 })
 
 
-//exporting to
+//exporting to views
 module.exports = router;

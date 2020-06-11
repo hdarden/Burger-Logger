@@ -2,7 +2,7 @@ var express = require("express");
 var exphbs = require("express-handlebars");
 
 //accessing public folder
-app.use(express.static("public"));
+//app.use(express.static("public"));
 
 //express
 var app = express();
