@@ -7,15 +7,18 @@ const burger = {
         });
     },
 
-    insertOne: function(cb, burgerName){
-        orm.insertOne("burgers", burgerName, "burger_name", function(res){
+    insertOne: function(cols, vals, cb){
+        orm.insertOne("burgers", cols, vals, function(res){
             cb(res);
         });
     },
 
-    updateOne: function(,cb){
-        orm.updateOne()
-    }
+    updateOne: function(objColVals, condition, cb){
+        orm.updateOne("burgers", objColVals, condition, function(res){
+            cb(res);
+        });
+    },
+};
 
-}
+//exporting to burgers_controller.js
 module.exports = burger;

@@ -98,5 +98,6 @@ const orm = {
       },
     
 }
+
 //required by models/burger.js
 module.exports = orm;
