@@ -1,6 +1,55 @@
 # Burger-Logger
 
-# Node Express Handlebars
+## Description
+
+The purpose of this full-stack web app is to create a burger logger using MySQL, Node, Express, Handlebars and a homemade ORM. This app allows the user to create their own burger, add it to the list of burgers, and choose a burger to devour.
+
+## Table of Contents
+
+ 
+* [User Story](#user_story)  
+* [Deployed Link](#deployed_link)  
+* [Technologies Used](#technologies_used)  
+* [Screenshot](#screenshot)  
+* [Author](#author)
+
+## User Story
+
+```
+AS A hungry user
+I WANT to be able to create and name my own burgers
+SO THAT I can devour a burger and achieve satiety.
+```
+
+## Deployed Link
+
+Deployed on Heroku. Link: 
+
+## Technologies Used
+
+- MVC Framework
+
+Front End:
+   - HTML5
+   - CSS
+   - Javascript
+
+Backend:
+   - Node 
+   - Express 
+   - Handlebars.js
+   - MySQL Database
+   - Command Line
+
+## Screenshot
+
+
+
+## Author
+
+[Helen Darden](https://github.com/hdarden)
+
+
 
 ### Overview
 
@@ -26,21 +75,7 @@ When trying to connect remotely to your Heroku database on an open network such 
 
 * [Check out this video of the app for a run-through of how it works](https://youtu.be/msvdn95x9OM).
 
-### Commits
 
-Having an active and healthy commit history on GitHub is important for your future job search. It is also extremely important for making sure your work is saved in your repository. If something breaks, committing often ensures you are able to go back to a working version of your code.
-
-* Committing often is a signal to employers that you are actively working on your code and learning.
-
-  * We use the mantra “commit early and often.”  This means that when you write code that works, add it and commit it!
-
-  * Numerous commits allow you to see how your app is progressing and give you a point to revert to if anything goes wrong.
-
-* Be clear and descriptive in your commit messaging.
-
-  * When writing a commit message, avoid vague messages like "fixed." Be descriptive so that you and anyone else looking at your repository knows what happened with each commit.
-
-* We would like you to have well over 200 commits by graduation, so commit early and often!
 
 ### Submission on BCS
 
@@ -112,7 +147,7 @@ Having an active and healthy commit history on GitHub is important for your futu
 
      * `selectAll()`
      * `insertOne()`
-    <!--  * `updateOne()` -->
+     * `updateOne()`
 
    * Export the ORM object in `module.exports`.
 
@@ -124,7 +159,7 @@ Having an active and healthy commit history on GitHub is important for your futu
 
     * Inside `burger.js`, import `orm.js` into `burger.js`
 
-    <!-- * Also inside `burger.js`, create the code that will call the ORM functions using burger specific input for the ORM. -->
+    * Also inside `burger.js`, create the code that will call the ORM functions using burger specific input for the ORM.
 
     * Export at the end of the `burger.js` file.
 
@@ -139,7 +174,7 @@ Having an active and healthy commit history on GitHub is important for your futu
    * Express
    * `burger.js`
 
-<!-- 4. Create the `router` for the app, and export the `router` at the end of your file. -->
+4. Create the `router` for the app, and export the `router` at the end of your file.
 
 #### View setup
 
