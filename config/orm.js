@@ -47,13 +47,6 @@ const orm = {
       })
     },
 
-    /* insertOne: function(tableInput, burgerName, colName, cb) {
-        connection.query(`INSERT INTO ${tableInput} (${colName}) VALUES (${burgerName})`, function(err, res){
-            if(err) throw err;
-            cb(res);
-        })
-    }, */
-
     insertOne: function(table, cols, vals, cb) {
         var queryString = "INSERT INTO " + table;
     
@@ -70,14 +63,9 @@ const orm = {
           if (err) {
             throw err;
           }
-    
           cb(result);
         });
       },
-
-   /*  updateOne: function(tableInput, objColVals, condition, cb){
-        connection.query(`UPDATE `)
-    }  */
 
     updateOne: function(table, objColVals, condition, cb) {
         var queryString = "UPDATE " + table;
@@ -95,7 +83,7 @@ const orm = {
     
           cb(result);
         });
-      },
+    },
     
 }
 
