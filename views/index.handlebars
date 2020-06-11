@@ -4,8 +4,8 @@
 {{!--New burger list--}}
 <ul>
     {{#each burgers}}
-        <p>Name: {{burger.burger_name}}</p>
-        <button class="devour-burger" data-id="{{this.id}}">DEVOUR ME!</button>
+        <p>Name: {{id}}, {{burger_name}}</p>
+        <button class="devour-burger" data-id="{{id}}">DEVOUR ME!</button>
     {{/each}}
     
 </ul>
@@ -31,7 +31,7 @@
 
   <div class="form-group">
     <label for="devoured"></label><br>
-    <h3>Enter a burger you would like to eat. Click submit button. </h3>
+    <h3>Add a burger you would like to eat. Click submit button. </h3>
   </div>
 
   <button type="submit">Add Burger</button>
