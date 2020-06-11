@@ -13,11 +13,12 @@ const burger = {
         });
     },
 
-    updateOne: function(objColVals, condition, cb){
-        orm.updateOne("burgers", objColVals, condition, function(res){
+    updateOne: function(burgerId, cb){
+        orm.updateOne("burgers", "devoured", true, "id", burgerId, function(res){
             cb(res);
         });
     },
+
 };
 
 //exporting to burgers_controller.js

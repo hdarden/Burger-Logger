@@ -3,20 +3,25 @@
 <h2>New Burgers</h2>
 {{!--New burger list--}}
 <ul>
-    {{#each burgers}}
-        <p>Name: {{id}}, {{burger_name}}</p>
-        <button class="devour-burger" data-id="{{id}}">DEVOUR ME!</button>
-    {{/each}}
-    
+  {{#each burgers}}
+  {{#unless devoured}}
+  <li>
+    <p>{{burger_name}}</p>
+    <button class="devour-burger" data-id="{{id}}" data-devour="{{devoured}}">DEVOUR ME!</button>
+  </li>
+  {{/unless}}
+  {{/each}}
 </ul>
 
 {{!--devoured burger list--}}
 <h2>Devoured Burgers</h2>
 <ul>
   {{#each burgers}}
-    {{#if devoured}}
-      {{> burgers/burger-block devoured=true}}
-    {{/if}}
+  {{#if devoured}}
+  <li>
+    <p>{{burger_name}}</p>
+  </li>
+  {{/if}}
   {{/each}}
 </ul>
 

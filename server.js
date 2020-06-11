@@ -1,11 +1,11 @@
 var express = require("express");
 var exphbs = require("express-handlebars");
-
+var app = express();
 //accessing public folder
-//app.use(express.static("public"));
+app.use(express.static("public"));
 
 //express
-var app = express();
+
 var PORT = process.env.PORT || 8080;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
