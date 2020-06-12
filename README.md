@@ -23,7 +23,7 @@ SO THAT I can devour a burger and achieve satiety.
 
 ## Deployed Link
 
-Deployed on Heroku. Link: 
+[Deployed on Heroku.](https://arcane-wave-65165.herokuapp.com/) 
 
 ## Technologies Used
 
