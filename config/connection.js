@@ -16,7 +16,7 @@ if (process.env.JAWSDB_URL) {
 };
 
   //connecting
-  connection.connect();
+connection.connect();
 
 //exporting connection
 module.exports = connection;
