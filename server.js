@@ -1,6 +1,8 @@
 var express = require("express");
+var compression = require("compression");
 var exphbs = require("express-handlebars");
 var app = express();
+app.use(compression());
 //accessing public folder
 app.use(express.static("public"));
 

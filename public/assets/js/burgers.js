@@ -3,7 +3,7 @@ $(function() {
       var id = $(this).data("id");
       
 
-      // Send the PUT request.
+      // Send the PUT--update request.
       $.ajax("/api/burgers/" + id, {
         type: "PUT",
       }).then(
