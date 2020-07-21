@@ -19,6 +19,11 @@ const burger = {
         });
     },
 
+    deleteOne: function(condition, cb){
+        orm.delete("burgers", condition, function(res) {
+            cb(res);
+        })
+    }
 };
 
 //exporting to burgers_controller.js
