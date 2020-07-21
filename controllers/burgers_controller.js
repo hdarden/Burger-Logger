@@ -24,9 +24,9 @@ router.post("/api/burgers", function(req, res){
 //when burger is devoured, adds to the devoured list
 router.put("/api/burgers/:id", function(req, res){
     var condition = "id = " + req.params.id;
-    /* console.log(condition);
+    console.log(condition);
     console.log("condition", condition);
-    console.log(req.body); */
+    console.log(req.body);
 //updates burger to be devoured
     burger.updateOne(req.params.id, function(result) {
         if (result.changedRows == 0){
@@ -40,7 +40,7 @@ router.put("/api/burgers/:id", function(req, res){
 router.delete("/api/burgers/:id", function(req, res){
     var condition = "id = " + req.params.id;
 
-    burger.delte(condition, function(result) {
+    burger.delete(condition, function(result) {
         if (result.affectedRows == 0) {
             return res.status(404).end();
         } else {
